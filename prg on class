@@ -1,0 +1,37 @@
+import java.util.*;
+
+class Test
+{
+    static int x,y,r;
+    static final double pi=3.14;
+
+    static Scanner sc=new Scanner(System.in);
+
+    static void area()
+    {
+        System.out.println("Area of rectangle = "+ (x*y) );
+    } 
+
+    static void areac()
+    {
+        System.out.println("Area of circle = "+ (pi*r*r) ); 
+    }
+
+    public static void main(String args[])
+    {
+        Test o1=new Test();
+
+        System.out.println("enter length and breadth of rectangle:");
+        x=sc.nextInt();
+        y=sc.nextInt();
+
+        area();
+
+        System.out.println("enter radius of circle:");
+        r=sc.nextInt();
+        areac();
+        
+        
+
+    }
+}
