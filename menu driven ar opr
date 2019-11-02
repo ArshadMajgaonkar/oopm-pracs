@@ -1,0 +1,64 @@
+import java.util.*;
+
+class Test
+{
+    static Scanner sc=new Scanner(System.in);
+
+    static int x,y,ch;
+
+    static void getinput()
+    {
+        System.out.println("Enter two number : ");
+        x=sc.nextInt();
+        y=sc.nextInt();
+    }
+    public static void main(String args[]) {
+
+        
+        Test obj1=new Test();
+       
+        getinput();
+
+
+        do {
+           System.out.println("1.Addition");
+           System.out.println("2.Sub");
+           System.out.println("3.mul");
+           System.out.println("4.div");
+           System.out.println("5.mod div");
+           System.out.println("6.right shift zero fill");
+           System.out.println("7.exit");
+           ch=sc.nextInt();
+
+           switch (ch) {
+               case 1:System.out.println("result = "+ (x+y) );
+               break;
+
+               case 2:System.out.println("result = "+ (x-y) );
+               break;
+
+               case 3:System.out.println("result = "+ (x*y) );
+               break;
+
+               case 4:System.out.println("result = "+ (x/y) );
+               break;
+
+               case 5:System.out.println("result = "+ (x%y) );
+               break;
+
+               case 6:System.out.println("result = "+ (x>>>1) );
+               break;
+
+               case 7:System.out.println("Thank you");
+               break;
+           
+               default:System.out.println("error inv inp");
+               break;
+           }
+           
+           
+
+        } while (ch!=7);
+
+    }
+}
