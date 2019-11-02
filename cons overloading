@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Test
+{
+    Test()
+    {
+        System.out.println("In zero parameterized constructor");
+    }
+
+    Test(int x)
+    {
+        System.out.println("In one parameterized constructor");
+        System.out.println("value of parameter x = "+ x);
+    }
+    Test(int x, int y)
+    {
+        System.out.println("In two parameterized constructor");
+        System.out.println("value of parameter x = "+ x +"value of parameter y = "+ y);  
+    } 
+
+    public static void main(String args[])
+    {
+        Test o1=new Test();
+        Test o2=new Test(5);
+        Test o3=new Test(10,20);
+    }
+}
