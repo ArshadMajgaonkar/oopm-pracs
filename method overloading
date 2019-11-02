@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Test
+{
+
+    void add(int x, int y)
+    {
+        System.out.println("In one parameterized constructor");
+        System.out.println("result = "+ (x+y) );
+    }
+    void add(int x, int y,int z)
+    {
+        System.out.println("value of parameter x = "+ (x+y+z) );  
+    } 
+
+    public static void main(String args[])
+    {
+        Test o1=new Test();
+        o1.add(10,20);
+        o1.add(10,20,30);
+
+    }
+}
