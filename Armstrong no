@@ -1,0 +1,25 @@
+import java.util.*;   //153 is armstrong
+
+class Test
+{
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      int x,y,i,d,sum=0,xcopy;
+      
+      System.out.println("Enter number: ");
+      x=sc.nextInt();
+      xcopy=x;
+
+      while (x>0) {
+          d=x%10;
+          sum=sum + (d*d*d);
+          x=x/10;
+      }
+
+      if(sum==xcopy)
+      System.out.println("Armstrong number");
+      else
+      System.out.println("Not an arms no");
+    }
+}
