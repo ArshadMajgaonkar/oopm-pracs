@@ -1,0 +1,34 @@
+import java.util.*;   //153 is armstrong
+
+class Test
+{
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      int i,j,d,n,flag=0;
+
+      System.out.println("Enter last number upto which you need to print: ");
+      n=sc.nextInt();
+
+      System.out.println("Prime numbers : ");
+
+      for(j=2;j<n;j++) //outr loop for changing no
+      {
+        for(i=2;i<j;i++) //inner loop for changing denominator
+        {
+          if(j%i==0) //continuous division
+          {
+          flag=1;
+          }
+        }
+       
+  
+        if(flag==0)   //prime check condition
+        System.out.println(j);
+
+        flag=0;
+      }
+
+     
+    }
+}
