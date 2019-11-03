@@ -1,0 +1,38 @@
+Class:
+User defined data type. It is a template for objects. 
+It consist of properties and methods for objects.
+Object:
+Instance of class . objects are created using constructor class .
+it gives access to members and fields of class
+Java features:
+Compiled and interpreted , multithreaded, platform independent, oopl
+Jvm:
+Java virtual machine is basically a interpreter. 
+Java src code -> compiler -> bytecode(.class) -> jvm -> machine code
+Difference btw oop and procedure:
+Object-oriented Programming uses classes and objects, Procedural Programming 
+takes on applications by solving problems from the top of the code down to the bottom.
+Abstraction
+Abstraction is selecting data from a larger pool to show only the relevant 
+details to the object. It helps to reduce programming complexity and effort. 
+In Java, abstraction is accomplished using Abstract classes and interfaces. 
+It is one of the most important concepts of OOPs.
+Polymorphism:
+Polymorphism in Java is a concept by which we can perform a single action
+in different ways. Polymorphism is derived from 
+Compilr time: method overloading
+Run time: Method overriding
+Interface
+An interface in java is a blueprint of a class. 
+It has static constants and abstract methods.
+The class which will implement interface has to define this abstract methods.
+Q) Why is the Java main method static?
+Ans) It is because the object is not required to call a static method.
+If it were a non-static method, JVM creates an object first then call
+main() method that will lead the problem of extra memory allocation.
+________________________________________
+3) Java static block
+o	Is used to initialize the static data member.
+o	It is executed before the main method at the time of classloading.
+This,super,final,abstract,exception handling,frst line of prg,thread
+
