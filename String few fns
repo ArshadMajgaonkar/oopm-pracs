@@ -1,0 +1,21 @@
+import java.util.*;   //153 is armstrong
+import java.lang.*;
+
+class Test
+{
+    public static void main(String args[])
+    {
+      String s1="hello";
+      String s2="jumbo";
+
+      System.out.println("String length of s1 is "+s1.length());
+      System.out.println("String length of s2 is "+s2.length());
+      System.out.println("on comparing s1 and s2 result = "+ (s1.compareTo(s2)) );
+      s1=s1.concat("world");
+      System.out.println("after concatenation s1 = "+ s1 );
+
+      
+
+
+    }
+}
