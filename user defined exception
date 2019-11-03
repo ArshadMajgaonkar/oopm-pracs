@@ -1,0 +1,31 @@
+import java.util.*;   //153 is armstrong
+
+class Test
+{
+    public static void main(String args[])
+    {
+      int age=10;
+
+      try {
+        if(age<18)
+        {
+            throw new MyException("You are not eligible");
+        }
+        else
+        System.out.println("welcome");
+      } catch (MyException e) {
+          System.out.println("exception caught "+e.getMessage());
+      }
+
+    }
+}
+
+MyException.java
+
+class MyException extends Exception
+{
+    MyException(String s)
+    {
+        super(s);
+    }
+}
