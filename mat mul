@@ -1,4 +1,4 @@
-import java.util.*;   //153 is armstrong
+import java.util.*;  
 import java.lang.*;
 
 class Test
@@ -46,28 +46,28 @@ class Test
 
       if( (c1==r2) )
       {
+        for(i=0;i<2;i++)
+        {
+          for(j=0;j<c3;j++)
+          { 
+           m3[i][j]=0;
+           for(k=0;k<c1;k++)
+           { 
+            m3[i][j]=m3[i][j]+m1[i][k]*m2[k][j];
+           }
+          }
+        }
+        //display
+        System.out.println("Result:");
         for(i=0;i<r3;i++)
         {
           for(j=0;j<c3;j++)
           {
-           m3[i][j]=0;
-           for(k=0;k<c1;k++)
-           {
-            m3[i][j]=m3[i][j]+m1[i][k]*m2[k][j];
-           }
+            System.out.print(m3[i][j]+"  ");
           }
-
-          //display
-          System.out.println("Result:");
-          for(i=0;i<r3;i++)
-          {
-            for(j=0;j<c3;j++)
-            {
-             System.out.print(m3[i][j]+"  ");
-            }
-            System.out.println();
-          }
+          System.out.println();
         }
+        
 
         
       }
